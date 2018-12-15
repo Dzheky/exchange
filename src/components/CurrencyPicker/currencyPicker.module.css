@@ -1,0 +1,34 @@
+.container {
+    padding-bottom: 35px;
+}
+
+.page {
+    padding: 20px;
+}
+
+.page:focus {
+    outline: none;
+}
+
+.pageTopContent {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 40px;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+.currencyInput {
+    border: none;
+    margin-left: 10px;
+    max-width: 200px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: right;
+    background: transparent;
+    outline: none;
+    color: white;
+}
