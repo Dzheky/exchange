@@ -1,0 +1,1 @@
+export const selectAccount = state => state.account

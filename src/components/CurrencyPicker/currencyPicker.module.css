@@ -19,15 +19,28 @@
     overflow: hidden;
 }
 
+.pageBottomContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    opacity: 0.6;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+}
+
 .currencyInput {
     border: none;
+    flex: 1;
     margin-left: 10px;
-    max-width: 200px;
+    width: 150px;
 
     font-family: Roboto, sans-serif;
     font-size: 40px;
     font-weight: 100;
     text-align: right;
+    text-overflow: ellipsis;
     background: transparent;
     outline: none;
     color: white;
