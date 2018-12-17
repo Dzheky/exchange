@@ -94,9 +94,10 @@ class CurrencyPicker extends Component {
         )
     }
 
-    renderPickerPage = (currency) => {
+    renderPickerPage = (currency, index) => {
         const { currencyInputValue } = this.state
         const { currencyValue, sign, label } = this.props
+        const tabIndex = this.carouselIndex === index ? null : -1;
 
         return (
             <div
@@ -109,6 +110,7 @@ class CurrencyPicker extends Component {
                     </div>
                     <input
                         className={styles.currencyInput}
+                        tabIndex={tabIndex}
                         value={formatCurrencyValue(currencyValue, sign) || currencyInputValue}
                         onChange={this.handleInputChange}
                     />

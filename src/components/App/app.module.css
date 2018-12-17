@@ -9,3 +9,20 @@
     color: white;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
 }
+
+.exchangeButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exchangeButton {
+    cursor: pointer;
+}
+
+.exchangeButton:hover {
+    opacity: 0.8;
+}
+
+.exchangeButton:disabled {
+    opacity: 0.5;
+}
