@@ -1,4 +1,4 @@
-import { formatCurrencyValue, getCarouselIndex, SLIDE_DIRECTION } from './currencyPickerModel'
+import { formatCurrencyValue } from './currencyPickerModel'
 import { SIGNS } from '../../constants/exchanges'
 
 describe('formatCurrencyValue', () => {

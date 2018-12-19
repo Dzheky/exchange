@@ -52,14 +52,22 @@ class App extends Component {
     }
 
     handleFromCurrencyChange = (currency) => {
+        const { rates } = this.props
+        const { toCurrency, fromValue } = this.state
+
         this.setState({
             fromCurrency: currency,
+            toValue: (fromValue * calculateExchangeRate(currency, toCurrency, rates)).toFixed(2).toString()
         })
     }
 
     handleToCurrencyChange = (currency) => {
+        const { rates } = this.props
+        const { fromCurrency, fromValue } = this.state
+
         this.setState({
             toCurrency: currency,
+            toValue: (fromValue * calculateExchangeRate(fromCurrency, currency, rates)).toFixed(2).toString()
         })
     }
 
